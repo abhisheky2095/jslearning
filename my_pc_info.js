@@ -1,6 +1,7 @@
 'use strict';
 
 var os = require('os');
+
 console.log("Your PC Name is  :", os.hostname());
 console.log("Os Type : ", os.type());
 console.log("Os Platform : ", os.platform());
@@ -16,7 +17,7 @@ console.log("System Total Cpu : ", cpuCount)
 function formatBytes(bytes, decimals = 2) {
     if (bytes === 0) return '0 Bytes';
 
-    const k = 1024;
+    const k = 1024; 
     const dm = decimals < 0 ? 0 : decimals;
     const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
 
